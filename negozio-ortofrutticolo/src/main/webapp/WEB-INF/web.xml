@@ -5,64 +5,53 @@
          version="3.1">
          
           <servlet>
-		<servlet-name>aggProdotto</servlet-name>
-		<servlet-class>azioni.AggiuntaProdotto</servlet-class>
+		<servlet-name>AggiungiProdotto</servlet-name>
+		<servlet-class>it.dstech.servlet.AggiungiProdotto</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>aggProdotto</servlet-name>
-		<url-pattern> /aggProdotto</url-pattern>
+		<servlet-name>AggiungiProdotto</servlet-name>
+		<url-pattern> /AggiungiProdotto</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>rimProdotto</servlet-name>
-		<servlet-class>azioni.RimozioneProdotto</servlet-class>
+		<servlet-name>RimuoviProdotto</servlet-name>
+		<servlet-class>it.dstech.servlet.RimuoviProdotto</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>rimProdotto</servlet-name>
-		<url-pattern> /rimProdotto</url-pattern>
+		<servlet-name>RimuoviProdotto</servlet-name>
+		<url-pattern> /RimuoviProdotto</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>stmProdotto</servlet-name>
-		<servlet-class>azioni.StampaProdotti</servlet-class>
+		<servlet-name>ListinoProdotti</servlet-name>
+		<servlet-class>it.dstech.servlet.ListinoProdotti</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>stmProdotto</servlet-name>
-		<url-pattern> /stmProdotto</url-pattern>
+		<servlet-name>ListinoProdotti</servlet-name>
+		<url-pattern> /ListinoProdotti</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>modificaProdotto</servlet-name>
-		<servlet-class>azioni.modificaProdotto</servlet-class>
+		<servlet-name>Compra</servlet-name>
+		<servlet-class>it.dstech.servlet.Compra</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>modificaProdotto</servlet-name>
-		<url-pattern> /modificaProdotto</url-pattern>
+		<servlet-name>Compra</servlet-name>
+		<url-pattern>/Compra</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>vendiProdotto</servlet-name>
-		<servlet-class>azioni.Venduto</servlet-class>
+		<servlet-name>ListaProdottiVenduti</servlet-name>
+		<servlet-class>it.dstech.servlet.ListaProdottiVenduti</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>vendiProdotto</servlet-name>
-		<url-pattern> /vendiProdotto</url-pattern>
+		<servlet-name>ListaProdottiVenduti</servlet-name>
+		<url-pattern> /ListaProdottiVenduti</url-pattern>
 	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>stampaProdottiVenduti</servlet-name>
-		<servlet-class>azioni.StampaVendite</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>stampaProdottiVenduti</servlet-name>
-		<url-pattern> /stampaProdottiVenduti</url-pattern>
-	</servlet-mapping>
-         
-         
+       
 </web-app>
