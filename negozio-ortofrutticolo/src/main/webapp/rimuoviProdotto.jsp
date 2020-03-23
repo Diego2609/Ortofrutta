@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Rimuovi Prodotto</title>
 </head>
 <style>
 table, th, td {
@@ -15,7 +15,7 @@ table, th, td {
 </style>
 <body>
 
-<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listaVendite"); %>
+<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listinoProdotti"); %>
 <table>
   <tr>
     <th>IdProdotto</th>
@@ -44,10 +44,10 @@ table, th, td {
 	<% } %>
 </table>
 
-<form action="RimuoviProdotto"> 
+<form action="RimuoviProdotto" method="post"> 
   <label for="idProdotto">Inserisci l'id del prodotto da rimuovere</label>
   <input type="number" id="idProdotto" name="idProdotto"><br><br>
-  <input type="submit" value="rimuovi">
+  <input type="submit" value="Rimuovi">
 </form>
 
 <form action="paginaIniziale.jsp">

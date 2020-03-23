@@ -15,7 +15,7 @@ table, th, td {
 </style>
 <body>
 
-<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listaVendite"); %>
+<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listinoProdotti"); %>
 <table>
   <tr>
     <th>IdProdotto</th>

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Compra</title>
 </head>
 <style>
 table, th, td {
@@ -15,7 +15,7 @@ table, th, td {
 </style>
 <body>
 
-<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listaVendite"); %>
+<%ArrayList<Prodotto> listinoProdotti=(ArrayList<Prodotto>) request.getAttribute("listinoProdotti"); %>
 <table>
   <tr>
     <th>IdProdotto</th>
@@ -43,7 +43,7 @@ table, th, td {
 	</td> 
 	<% } %>
 </table>
-<form action="Compra">
+<form action="Compra" method="post">
 <label for="idProdotto">Inserisci l'id del prodotto che vuoi comprare</label>
 <input type="number" id="idProdotto" name="idProdotto"><br><br>
 <label for="qtaVenduta">Inserisci la quantità che desideri comprare</label>

@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Aggiungi Prodotto</title>
 </head>
 <body>
 
-<form action="AggiungiProdotto">
+<form action="AggiungiProdotto" method="post">
   <label for="nome">Inserisci il nome del prodotto:</label>
   <input type="text" id="nome" name="nome"><br><br>
   <label for="qta">Inserisci la quantita del prodotto</label>

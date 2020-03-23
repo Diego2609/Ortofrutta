@@ -55,6 +55,20 @@ public class GestioneDatabase {
 		return false;
 	}
 
+	public static boolean controlloProdotto(int idProdotto) throws ClassNotFoundException, SQLException {
+		Connection connessione = connessioneDatabase();
+		String query = "select * from prodotti where idProdotto=?;";
+		PreparedStatement statement = connessione.prepareStatement(query);
+		statement.setInt(1, idProdotto);
+		ResultSet risultato = statement.executeQuery();
+		while (risultato.next()) {
+			connessione.close();
+			return true;
+		}
+		connessione.close();
+		return false;
+	}
+
 	public static void rimuoviProdotto(int idProdotto) throws ClassNotFoundException, SQLException {
 		Connection connessione = connessioneDatabase();
 		String query = "delete from prodotti where idProdotto= ?;";
@@ -153,11 +167,11 @@ public class GestioneDatabase {
 		}
 	}
 
-	public static void rimuoviVendita(int idVenduto) throws ClassNotFoundException, SQLException {
+	public static void rimuoviVendita(int idProdotto) throws ClassNotFoundException, SQLException {
 		Connection connessione = connessioneDatabase();
-		String query = "delete from vendite where idVenduto= ?;";
+		String query = "delete from vendite where idProdotto= ?;";
 		PreparedStatement statement = connessione.prepareStatement(query);
-		statement.setInt(1, idVenduto);
+		statement.setInt(1, idProdotto);
 		statement.execute();
 		connessione.close();
 	}

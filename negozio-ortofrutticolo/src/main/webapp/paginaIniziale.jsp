@@ -4,25 +4,28 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Pagina Iniziale</title>
 </head>
 <body>
-<h1>Scegli</h1>
+<%String messaggio = (String) request.getAttribute("messaggio");
+if(messaggio!= null){
 
-<form action="aggiungiprodotto.jsp">
-<input type="submit" value = "Aggiungi prodotto">
+%>
+
+<h1>Errore</h1>
+
+<%=messaggio%>
+
+<%}else{%>
+<h1>Scegli un'azione</h1>
+
+<form action="ControlloAzioni">
+<input type="submit" name="azione" value = "Aggiungi prodotto">
+<input type="submit" name="azione" value = "Rimuovi prodotto">
+<input type="submit" name="azione" value = "Listino prodotti">
+<input type="submit" name="azione" value = "Compra prodotto">
+<input type="submit" name="azione" value = "Prodotti venduti">
 </form>
-<form action="rimuoviProdotto.jsp">
-<input type="submit" value = "Rimuovi prodotto">
-</form>
-<form action="listinoProdotti.jsp">
-<input type="submit" value = "Listino prodotti">
-</form>
-<form action="compra.jsp">
-<input type="submit" value = "Compra prodotto">
-</form>
-<form action="listaProdottiVenduti.jsp">
-<input type="submit" value = "Prodotti venduti">
-</form>
+<%}%>
 </body>
 </html>

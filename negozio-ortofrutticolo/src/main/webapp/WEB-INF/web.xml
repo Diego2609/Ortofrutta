@@ -25,16 +25,6 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>ListinoProdotti</servlet-name>
-		<servlet-class>it.dstech.servlet.ListinoProdotti</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>ListinoProdotti</servlet-name>
-		<url-pattern> /ListinoProdotti</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
 		<servlet-name>Compra</servlet-name>
 		<servlet-class>it.dstech.servlet.Compra</servlet-class>
 	</servlet>
@@ -45,13 +35,13 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>ListaProdottiVenduti</servlet-name>
-		<servlet-class>it.dstech.servlet.ListaProdottiVenduti</servlet-class>
+		<servlet-name>ControlloAzioni</servlet-name>
+		<servlet-class>it.dstech.servlet.ControlloAzioni</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>ListaProdottiVenduti</servlet-name>
-		<url-pattern> /ListaProdottiVenduti</url-pattern>
+		<servlet-name>ControlloAzioni</servlet-name>
+		<url-pattern> /ControlloAzioni</url-pattern>
 	</servlet-mapping>
        
 </web-app>
